@@ -6,7 +6,7 @@ import superchat from "../assets/superchat.gif";
 import expenseTracker from "../assets/expense-tracker.gif";
 import todoApp from '../assets/todo.gif'
 // hay que corregir el tema de importar el gif
-import github from '../../public/github.png'
+import github from '../assets/github.png'
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
