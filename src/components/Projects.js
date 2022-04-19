@@ -4,9 +4,9 @@ import { useCallback, useEffect, useState } from "react";
 import pokedex from "../assets/pokedex.gif";
 import superchat from "../assets/superchat.gif";
 import expenseTracker from "../assets/expense-tracker.gif";
-import todoApp from '../assets/todo.gif'
+import todoApp from "../assets/todo.gif";
 // hay que corregir el tema de importar el gif
-import github from '../assets/github.png'
+import github from "../assets/github.png";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -68,10 +68,10 @@ const Projects = () => {
             case "chat":
               image = superchat;
               break;
-            case 'expe':
+            case "expe":
               image = expenseTracker;
               break;
-            case 'todo':
+            case "todo":
               image = todoApp;
               break;
             default:
@@ -99,7 +99,9 @@ const Projects = () => {
                     {project.title}
                   </h1>
                   <p className="leading-relaxed">{project.description}</p>
-                  <img src={github} alt='GitHub LOGO'/>
+                  <div className="flex justify-around mt-2">
+                    <img src={github} alt="GitHub LOGO" />
+                  </div>
                 </div>
               </div>
             </a>
@@ -127,7 +129,7 @@ const Projects = () => {
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
             Here i display my latest projects if you wanna see more:
-            <a href='https://github.com/emifrese'> Github</a>
+            <a href="https://github.com/emifrese"> Github</a>
           </p>
         </div>
         {content}
