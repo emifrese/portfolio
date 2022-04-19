@@ -6,6 +6,7 @@ import superchat from "../assets/superchat.gif";
 import expenseTracker from "../assets/expense-tracker.gif";
 import todoApp from '../assets/todo.gif'
 // hay que corregir el tema de importar el gif
+import github from '../../public/github.png'
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -98,6 +99,7 @@ const Projects = () => {
                     {project.title}
                   </h1>
                   <p className="leading-relaxed">{project.description}</p>
+                  <img src={github} alt='GitHub LOGO'/>
                 </div>
               </div>
             </a>
